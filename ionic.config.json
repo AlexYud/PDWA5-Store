@@ -1,0 +1,7 @@
+{
+  "name": "pdwa5-store",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
