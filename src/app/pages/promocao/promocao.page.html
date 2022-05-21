@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button color="light"></ion-menu-button>
+    </ion-buttons>
+    <ion-title color="light">Promoção</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="dark">
+  <ion-grid>
+    <ion-row class="ion-text-center ion-padding">
+      <ion-title color="danger" style="font-size: 4em;">Tempo Restante: {{timeLeft}}</ion-title>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-card>
+          <ion-card-header>
+            <ion-img src="https://www.w3schools.com/w3images/jeans1.jpg"></ion-img>
+          </ion-card-header>
+          <ion-card-content class="ion-text-center">
+            <ion-title>Skinny Jeans Rasgada</ion-title>
+            <ion-chip>
+              <ion-label><strong>R$:</strong> 75,00</ion-label>
+            </ion-chip>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card>
+          <ion-card-header>
+            <ion-img src="https://www.w3schools.com/w3images/jeans2.jpg"></ion-img>
+          </ion-card-header>
+          <ion-card-content class="ion-text-center">
+            <ion-title>Mega Jeans Rasgada</ion-title>
+            <ion-chip>
+              <ion-label><strong>R$:</strong> 135,00</ion-label>
+            </ion-chip>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card>
+          <ion-card-header>
+            <ion-img src="https://www.w3schools.com/w3images/jeans4.jpg"></ion-img>
+          </ion-card-header>
+          <ion-card-content class="ion-text-center">
+            <ion-title>Vintage Skinny Jeans</ion-title>
+            <ion-chip>
+              <ion-label><strong>R$:</strong> 90,00</ion-label>
+            </ion-chip>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col><ion-title>Horário do Servidor: {{time}}</ion-title></ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
