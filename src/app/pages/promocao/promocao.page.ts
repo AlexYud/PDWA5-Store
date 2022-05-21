@@ -48,12 +48,6 @@ export class PromocaoPage implements OnInit {
     }
     this.timeLeft = `${hours}:${minutes}:${seconds}`;
 
-    // if (hours < 10 || minutes < 10 || seconds < 10) {
-      
-    // } else {
-    //   this.timeLeft = `${hours}:${minutes}:${seconds}`
-    // }
-
   }
 
 }
