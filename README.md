@@ -18,7 +18,7 @@
 
 ## 💻 Projeto
 
-- Frontend desenvolvido para os trabalhos das matérias de PDWA5 e SIDA5.
+- Frontend desenvolvido para apresentar os trabalhos das matérias de PDWA5 e SIDA5.
 - Link da aplicação: https://pdwa5store.herokuapp.com
 
 ## 🚀 Tecnologias
