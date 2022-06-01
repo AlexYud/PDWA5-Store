@@ -16,23 +16,17 @@
   <img alt="" src="" width="100%">
 </p>
 
+## 💻 Projeto
+
+- Frontend desenvolvido para os trabalhos das matérias de PDWA5 e SIDA5.
+- Link da aplicação: https://pdwa5store.herokuapp.com
+
 ## 🚀 Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - Angular
 - Ionic
-
-## 🚀 Cloud & Hospedagem
-
-Esse projeto foi hospeado no:
-
-- Heroku
-
-## 💻 Projeto
-
-- Frontend desenvolvido para os trabalhos das matérias de PDWA5 e SIDA5.
-- Link da aplicação: https://pdwa5store.herokuapp.com
 
 ## 📝 Licença
 
