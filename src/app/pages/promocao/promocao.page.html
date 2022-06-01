@@ -10,7 +10,9 @@
 <ion-content color="dark">
   <ion-grid>
     <ion-row class="ion-text-center ion-padding">
-      <ion-title color="danger" style="font-size: 4em;">Tempo Restante: {{timeLeft}}</ion-title>
+      <ion-title *ngIf="isPromo" color="danger" style="font-size: 4em;">Tempo Restante: {{timeLeft}}</ion-title>
+
+      <ion-title *ngIf="!isPromo" color="danger" style="font-size: 4em;">Promoção Esgotada!</ion-title>
     </ion-row>
     <ion-row>
       <ion-col>

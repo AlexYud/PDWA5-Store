@@ -12,16 +12,22 @@ import { ApiService } from 'src/app/services/api.service';
 export class PromocaoPage implements OnInit {
 
   private timeLeft: any = null;
-  private countDownDate = new Date("Jul 25, 2021 16:37:52").getTime();
-  private time: any = '00:00'
+  private time: any = '00:00';
+  private isPromo: boolean = false;
 
   constructor(private api: ApiService) { }
 
   ngOnInit() {
     this.api.socket.on('time update', (time: string) => {
       this.timeString(time);
+      
       var now = new Date(time);
-      var timeLeft = new Date("May 27, 2022 19:00:00").getTime();
+      var timeLeft = new Date("May 27, 2030 19:00:00").getTime();
+      if(now.getHours() >= 19 && now.getHours() < 15) {
+        this.isPromo = false;
+      } else {
+        this.isPromo = true;
+      }
       this.calculateTime(now, timeLeft);
     })
   }
