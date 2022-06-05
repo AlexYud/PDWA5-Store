@@ -7,7 +7,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" color="dark">
   <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">Produtos</ion-title>
@@ -17,82 +17,15 @@
   <div id="container">
     <ion-grid>
       <ion-row>
-        <ion-col>
+        <ion-col col-4 *ngFor="let product of list">
           <ion-card>
             <ion-card-header>
-              <ion-img src="https://www.w3schools.com/w3images/jeans1.jpg"></ion-img>
+              <ion-img [src]="product.img"></ion-img>
             </ion-card-header>
             <ion-card-content class="ion-text-center">
-              <ion-title>Skinny Jeans Rasgada</ion-title>
+              <ion-title>{{ product.name }}</ion-title>
               <ion-chip>
-                <ion-label><strong>R$:</strong> 75,00</ion-label>
-              </ion-chip>
-            </ion-card-content>
-          </ion-card>
-        </ion-col>
-        <ion-col>
-          <ion-card>
-            <ion-card-header>
-              <ion-img src="https://www.w3schools.com/w3images/jeans2.jpg"></ion-img>
-            </ion-card-header>
-            <ion-card-content class="ion-text-center">
-              <ion-title>Mega Jeans Rasgada</ion-title>
-              <ion-chip>
-                <ion-label><strong>R$:</strong> 135,00</ion-label>
-              </ion-chip>
-            </ion-card-content>
-          </ion-card>
-        </ion-col>
-        <ion-col>
-          <ion-card>
-            <ion-card-header>
-              <ion-img src="https://www.w3schools.com/w3images/jeans4.jpg"></ion-img>
-            </ion-card-header>
-            <ion-card-content class="ion-text-center">
-              <ion-title>Vintage Skinny Jeans</ion-title>
-              <ion-chip>
-                <ion-label><strong>R$:</strong> 90,00</ion-label>
-              </ion-chip>
-            </ion-card-content>
-          </ion-card>
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col>
-          <ion-card>
-            <ion-card-header>
-              <ion-img src="https://www.w3schools.com/w3images/jeans3.jpg"></ion-img>
-            </ion-card-header>
-            <ion-card-content class="ion-text-center">
-              <ion-title>Skinny Jeans Desgastado</ion-title>
-              <ion-chip>
-                <ion-label><strong>R$:</strong> 70,00</ion-label>
-              </ion-chip>
-            </ion-card-content>
-          </ion-card>
-        </ion-col>
-        <ion-col>
-          <ion-card>
-            <ion-card-header>
-              <ion-img src="https://www.w3schools.com/w3images/jeans4.jpg"></ion-img>
-            </ion-card-header>
-            <ion-card-content class="ion-text-center">
-              <ion-title>Jeans Azul Claro</ion-title>
-              <ion-chip>
-                <ion-label><strong>R$:</strong> 100,00</ion-label>
-              </ion-chip>
-            </ion-card-content>
-          </ion-card>
-        </ion-col>
-        <ion-col>
-          <ion-card>
-            <ion-card-header>
-              <ion-img src="https://www.w3schools.com/w3images/jeans1.jpg"></ion-img>
-            </ion-card-header>
-            <ion-card-content class="ion-text-center">
-              <ion-title>Skinny Jeans Azul</ion-title>
-              <ion-chip>
-                <ion-label><strong>R$:</strong> 60,00</ion-label>
+                <ion-label>{{ product.price }}</ion-label>
               </ion-chip>
             </ion-card-content>
           </ion-card>

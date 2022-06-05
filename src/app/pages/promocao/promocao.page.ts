@@ -19,6 +19,7 @@ export class PromocaoPage implements OnInit {
 
   ngOnInit() {
     this.api.socket.on('time update', (time: string) => {
+      
       this.timeString(time);
       
       var now = new Date(time);

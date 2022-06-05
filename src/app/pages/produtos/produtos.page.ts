@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from 'src/app/services/api.service';
 
 @Component({
   selector: 'app-produtos',
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProdutosPage implements OnInit {
 
-  constructor() { }
+  list = [];
+
+  constructor(public api: ApiService) { }
 
   ngOnInit() {
+    this.api.socket.on('update products', data => {
+      this.list = data;
+    });
+
+    this.api.getProducts().subscribe(data => {
+      this.list = data;
+    }, error => {
+      console.log(error);
+    });
   }
 
 }
