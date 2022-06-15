@@ -23,8 +23,8 @@ export class PromocaoPage implements OnInit {
       this.timeString(time);
       
       var now = new Date(time);
-      var timeLeft = new Date("May 27, 2030 19:00:00").getTime();
-      if(now.getHours() < 15 || now.getHours() >= 19 ) {
+      var timeLeft = new Date("May 27, 2030 22:00:00").getTime();
+      if(now.getHours() < 18 || now.getHours() >= 22 ) {
         this.isPromo = false;
       } else {
         this.isPromo = true;
